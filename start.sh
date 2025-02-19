@@ -1,0 +1,1 @@
+docker run -d --name ssh-tunnel -p 2222:22 -e SSH_USERNAME=myuser -e SSH_PASSWORD=mypassword ssh-tunnel
