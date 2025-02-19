@@ -32,6 +32,9 @@ jobs:
           latest
           ${{ github.sha }}
           type=ref,event=branch
+          type=ref,event=tag
+          type=pep440,pattern={{version}}
+
 
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
